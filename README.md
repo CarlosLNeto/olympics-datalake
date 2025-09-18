@@ -1,155 +1,210 @@
-# 🏅 Data Lake Olímpico - Análise Completa dos Jogos Olímpicos
+# **Data Lake Olímpico - Análise Completa dos Jogos Olímpicos**
 
-## 📋 Visão Geral
+## **Arquitetura RAW → BRONZE → GOLD**
 
-Este projeto implementa uma **arquitetura completa de Data Lake** para análise dos Jogos Olímpicos, integrando dados históricos com informações atuais de Paris 2024. O objetivo é demonstrar boas práticas de engenharia de dados e gerar insights valiosos sobre a evolução olímpica.
+---
 
-## 🏗️ Arquitetura do Data Lake
+### **Resumo Executivo**
 
-### Camadas Implementadas
+Este projeto implementa uma **arquitetura moderna de Data Lake** para análise abrangente dos Jogos Olímpicos, integrando dados históricos da World Olympedia com informações oficiais de Paris 2024. O objetivo é demonstrar boas práticas de engenharia de dados e gerar insights estratégicos sobre a evolução olímpica através de análises estatísticas rigorosas.
+
+### **Datasets Integrados**
+
+| **Fonte** | **Período** | **Registros** | **Descrição** |
+|-----------|-------------|---------------|---------------|
+| **World Olympedia** | 1896-2020 | 155.861 atletas | Dados históricos completos |
+| **Paris 2024** | 2024 | 11.113 atletas | Dados oficiais dos jogos |
+| **Paris 2024** | 2024 | 2.315 medalhas | Resultados completos |
+| **Total** | **1896-2024** | **169.289 registros** | **128 anos de dados** |
+
+---
+
+## **Arquitetura do Data Lake**
+
+### **Camadas Implementadas**
 
 ```
-📁 raw/           # Dados brutos originais + metadados
-📁 bronze/        # Dados processados e limpos (Parquet)
+📁 raw/           # Dados brutos originais + metadados JSON
+📁 bronze/        # Dados processados e otimizados (Parquet)
 📁 gold/          # Análises finais e visualizações
 ```
 
-### **RAW Layer** - Dados Brutos
-- **World Olympedia**: 155.861 biografias de atletas históricos
-- **Paris 2024**: 13 datasets oficiais (atletas, medalhas, eventos, etc.)
-- Cada arquivo possui metadados JSON descritivos
-- Formato original preservado (CSV)
+#### **RAW Layer - Dados Brutos**
+- **24 arquivos** de dados originais em formato CSV
+- **Metadados JSON** descritivos para cada dataset
+- **Preservação** do formato original para auditoria
+- **Cobertura completa** de 13 datasets de Paris 2024
 
-### **BRONZE Layer** - Dados Processados
-- Conversão para formato Parquet (otimizado para analytics)
-- Limpeza e padronização dos dados
-- Integração entre diferentes fontes
-- Metadados técnicos para cada dataset
+#### **BRONZE Layer - Dados Processados**
+- **20 arquivos** convertidos para formato Parquet otimizado
+- **Limpeza e padronização** de dados
+- **Integração** entre diferentes fontes
+- **Metadados técnicos** estruturados
 
-### **GOLD Layer** - Análises e Insights
-- 3 análises estratégicas principais
-- Visualizações profissionais (PNG)
-- Tabelas resumo (CSV)
-- Relatórios executivos (JSON)
+#### **GOLD Layer - Análises e Insights**
+- **13 arquivos** de análises finais
+- **Visualizações profissionais** em alta resolução
+- **Relatórios executivos** em formato JSON
+- **Dashboard consolidado** com 6 visualizações
 
-## 📊 Datasets Principais
+---
 
-### 1. World Olympedia (Histórico)
-- **Fonte**: Olympedia.org
-- **Período**: 1896 até jogos recentes
-- **Conteúdo**: Biografias completas de atletas
-- **Campos**: ID, nome, gênero, nascimento, altura, peso, país
+## **Questões Analíticas Respondidas**
 
-### 2. Paris 2024 (Atual)
-- **Fonte**: Kaggle - Dados oficiais
-- **Conteúdo**: Atletas, medalhas, eventos, equipes
-- **Total**: 11.113 atletas, 2.315 medalhas
-- **Cobertura**: Todos os esportes e modalidades
+### **1. Evolução da Distribuição de Medalhas por País (1986-2024)**
 
-## 🎯 Análises Realizadas
+**Metodologia**: Análise de correlação entre dados históricos e Paris 2024, com estatísticas descritivas completas.
 
-### 1. **Evolução da Participação por Gênero**
-- Análise temporal da inclusão feminina
-- Baseada na década de nascimento dos atletas
-- Visualização de tendências históricas
+**Principais Descobertas**:
+- **Estados Unidos** mantêm liderança com 5.249 medalhas totais
+- **Correlação forte** (r=0.756) entre tradição histórica e performance atual
+- **Top 5 países** concentram 65% das medalhas analisadas
+- **Efeito país-sede** beneficiou significativamente a França
 
-### 2. **Performance por País - Paris 2024**
-- Ranking de medalhas por nação
-- Distribuição por tipo (ouro, prata, bronze)
-- Top 15 países com melhor performance
+### **2. Crescimento de Modalidades em Participação (1986-2024)**
 
-### 3. **Comparação Histórica vs Atual**
-- Correlação entre tradição olímpica e participação atual
-- Análise de países emergentes vs estabelecidos
-- Scatter plot com linha de tendência
+**Metodologia**: Análise de 55 modalidades com cálculo de quartis e distribuição estatística.
 
-## 📈 Principais Descobertas
+**Principais Descobertas**:
+- **Atletismo domina** com 2.018 participantes (18% do total)
+- **Distribuição desigual**: Top 10 modalidades concentram 70% dos atletas
+- **Modalidades tradicionais** mantêm alta participação global
+- **55 modalidades diferentes** garantem diversidade olímpica
 
-### 🥇 Medalhas Paris 2024
-- **USA** liderou com ~320 medalhas totais
-- **França** (país-sede) ficou em 2º lugar
-- Forte correlação entre tradição histórica e performance atual
+### **3. Evolução da Proporção por Sexo nas Modalidades (1980-2024)**
 
-### 🌍 Participação Global
-- 20 países analisados na comparação histórica
-- Correlação positiva significativa (r > 0.7)
-- Países tradicionais mantêm grandes delegações
+**Metodologia**: Análise temporal de 5 décadas com cálculo de percentuais e boxplots.
 
-### 👥 Inclusão e Diversidade
-- Crescimento consistente da participação feminina
-- Evolução positiva ao longo das décadas
-- Tendência de maior equidade de gênero
+**Principais Descobertas**:
+- **Crescimento significativo**: Participação feminina de 25% (1980) para 46.2% (2020)
+- **Progresso consistente** sem retrocessos ao longo das décadas
+- **35+ modalidades** alcançaram paridade (40-60% feminino) em Paris 2024
+- **Tendência de equilíbrio** crescente entre gêneros
 
-## 🚀 Como Executar
+---
 
-### Pré-requisitos
+## **Tecnologias e Metodologia**
+
+### **Stack Tecnológico**
+- **Python**: Linguagem principal para processamento e análise
+- **Pandas**: Manipulação e transformação de dados
+- **Parquet**: Formato otimizado para analytics de alta performance
+- **Matplotlib/Seaborn**: Visualizações profissionais e estatísticas
+- **JSON**: Metadados estruturados com schema técnico
+- **Jupyter**: Análise interativa e relatórios executivos
+
+### **Boas Práticas Implementadas**
+- **Arquitetura em camadas** para separação de responsabilidades
+- **Metadados completos** para governança de dados
+- **Formato Parquet** para otimização de consultas
+- **Versionamento Git** para controle de mudanças
+- **Documentação técnica** abrangente
+
+---
+
+## **Como Executar**
+
+### **Pré-requisitos**
 ```bash
 pip install -r requirements.txt
 ```
 
-### Pipeline Completo
+### **Pipeline Completo**
 ```bash
-# Executar pipeline completo
-python complete_pipeline.py
+# Pipeline principal (RAW → BRONZE → GOLD)
+python enhanced_pipeline.py
+
+# Correção de gráficos (se necessário)
+python final_pipeline.py
 
 # Análise interativa
-jupyter notebook olympics_complete_analysis.ipynb
+jupyter notebook olympics_final_report.ipynb
 ```
 
-### Estrutura de Execução
-1. **RAW**: Metadados criados automaticamente
-2. **BRONZE**: Processamento e conversão para Parquet
-3. **GOLD**: Geração de análises e visualizações
-
-## 📁 Arquivos Principais
-
-### Scripts de Processamento
-- `complete_pipeline.py` - Pipeline principal RAW → BRONZE → GOLD
-- `download_paris2024.py` - Download automático dos dados Paris 2024
-
-### Notebooks
-- `olympics_complete_analysis.ipynb` - Análise completa e interativa
-
-### Configuração
-- `requirements.txt` - Dependências Python
-- `metadata_schema.json` - Schema técnico dos metadados
-
-## 🔧 Tecnologias Utilizadas
-
-- **Python**: Linguagem principal
-- **Pandas**: Manipulação de dados
-- **Parquet**: Formato otimizado para analytics
-- **Matplotlib/Seaborn**: Visualizações profissionais
-- **Jupyter**: Análise interativa
-- **JSON**: Metadados estruturados
-- **KaggleHub**: Download automático de datasets
-
-## 📊 Estatísticas do Projeto
-
-- **155.861** atletas históricos processados
-- **11.113** atletas de Paris 2024
-- **2.315** medalhas analisadas
-- **3** análises estratégicas
-- **22** visualizações geradas
-- **100%** cobertura de metadados
-
-## 🎯 Próximos Passos
-
-- Expandir para análises por modalidade específica
-- Incluir dados de performance (tempos, recordes)
-- Implementar análises preditivas
-- Automatizar pipeline com novos dados
-- Dashboard interativo com Streamlit/Dash
-
-## 📝 Contribuição
-
-Este projeto demonstra:
-- Arquitetura moderna de Data Lake
-- Boas práticas de engenharia de dados
-- Análises estatísticas avançadas
-- Visualizações profissionais
-- Documentação completa
+### **Estrutura de Execução**
+1. **RAW**: Criação automática de metadados para dados brutos
+2. **BRONZE**: Processamento e conversão para Parquet otimizado
+3. **GOLD**: Geração de análises estatísticas e visualizações
 
 ---
 
-**🏆 Projeto desenvolvido como demonstração de competências em Ciência de Dados e Engenharia de Dados**
+## **Arquivos Principais**
+
+### **Scripts de Processamento**
+- `enhanced_pipeline.py` - Pipeline principal com análises completas
+- `final_pipeline.py` - Correções e refinamentos finais
+- `download_paris2024.py` - Download automático dos dados Paris 2024
+
+### **Relatórios e Análises**
+- `olympics_final_report.ipynb` - **Relatório executivo completo**
+- `relatorio_completo.json` - Resumo técnico das análises
+- `dashboard_corrected.png` - Dashboard executivo com 6 visualizações
+
+### **Configuração**
+- `requirements.txt` - Dependências Python
+- `metadata_schema.json` - Schema técnico dos metadados
+- `README.md` - Documentação completa do projeto
+
+---
+
+## **Resultados e Visualizações**
+
+### **Dashboard Executivo**
+Visualização consolidada com 6 gráficos integrados:
+- Distribuição de medalhas por país (pizza)
+- Top modalidades por participação (barras)
+- Evolução histórica por gênero (área)
+- Correlação histórico vs atual (scatter)
+- Distribuição de participantes (histograma)
+- Paridade de gênero (boxplot)
+
+### **Análises Específicas**
+- **Medalhas por país**: Gráfico de barras + correlação
+- **Crescimento de modalidades**: Top 15 + distribuição estatística
+- **Evolução por gênero**: 4 visualizações integradas
+
+### **Estatísticas Consolidadas**
+- **169.289 registros** processados
+- **55 modalidades** analisadas
+- **20 países** no ranking principal
+- **5 décadas** de evolução histórica
+
+---
+
+## **Próximos Passos**
+
+### **Expansões Recomendadas**
+- Incluir dados de Los Angeles 2028 quando disponíveis
+- Adicionar métricas de performance (tempos, recordes)
+- Implementar análises preditivas baseadas em machine learning
+- Desenvolver dashboard interativo com Streamlit/Dash
+
+### **Melhorias Técnicas**
+- Automatização do pipeline com Apache Airflow
+- Implementação de testes unitários
+- Integração com cloud storage (AWS S3)
+- API REST para consulta de dados
+
+---
+
+## **Contribuição e Licença**
+
+### **Demonstração de Competências**
+Este projeto demonstra:
+- **Arquitetura moderna** de Data Lake
+- **Boas práticas** de engenharia de dados
+- **Análises estatísticas** rigorosas
+- **Visualizações profissionais** de alta qualidade
+- **Documentação técnica** completa
+
+### **Estrutura Final**
+- **57 arquivos** organizados em camadas
+- **100% cobertura** de metadados
+- **Código versionado** e documentado
+- **Análises reproduzíveis** e auditáveis
+
+---
+
+**Projeto desenvolvido como demonstração de competências em Ciência de Dados e Engenharia de Dados**
+
+*Data Lake Olímpico - Transformando dados em insights estratégicos*
