@@ -1,0 +1,11 @@
+{
+  "nome": "Análise de Participação por Modalidade",
+  "fonte": "Paris 2024 Athletes",
+  "descricao": "Análise do crescimento e participação nas modalidades olímpicas",
+  "campos_principais": [
+    "discipline",
+    "paris2024_participants"
+  ],
+  "data_coleta": "2025-09-17T20:56:33.262064",
+  "observacoes": "Top modalidade: ['Athletics'] com 2018 participantes"
+}

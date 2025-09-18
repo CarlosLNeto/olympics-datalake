@@ -1,0 +1,12 @@
+{
+  "nome": "Evolução Histórica por Gênero",
+  "fonte": "World Olympedia processado",
+  "descricao": "Evolução da participação por gênero ao longo das décadas",
+  "campos_principais": [
+    "Female",
+    "Male",
+    "total"
+  ],
+  "data_coleta": "2025-09-17T20:56:33.727128",
+  "observacoes": "Análise de 5 décadas"
+}

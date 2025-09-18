@@ -1,0 +1,13 @@
+{
+  "nome": "Distribuição por Gênero - Paris 2024",
+  "fonte": "Paris 2024 Athletes",
+  "descricao": "Análise da distribuição por gênero nas modalidades de Paris 2024",
+  "campos_principais": [
+    "Female",
+    "Male",
+    "total",
+    "female_pct"
+  ],
+  "data_coleta": "2025-09-17T20:56:33.727556",
+  "observacoes": "Modalidade mais equilibrada: ['Shooting']"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Evolução de Medalhas por País (1986-2024)",
+  "fonte": "Análise integrada Olympedia + Paris 2024",
+  "descricao": "Evolução das medalhas por país desde 1986 até Paris 2024",
+  "campos_principais": [
+    "country",
+    "historical_medals",
+    "paris2024_medals",
+    "total_medals"
+  ],
+  "data_coleta": "2025-09-17T20:56:32.880280",
+  "observacoes": "Top país: USA com 5249 medalhas"
+}

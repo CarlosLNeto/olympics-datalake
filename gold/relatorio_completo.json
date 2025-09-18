@@ -1,0 +1,30 @@
+{
+  "projeto": "Análises Olímpicas Completas (1986-2024)",
+  "data_geracao": "2025-09-17T20:56:34.212602",
+  "analises": {
+    "medalhas_por_pais": {
+      "total_paises": 20,
+      "media_medalhas": 2332.45,
+      "pais_lider": "USA",
+      "medalhas_lider": 5249
+    },
+    "crescimento_modalidades": {
+      "total_modalidades": 55,
+      "media_participantes": 202.64,
+      "modalidade_top": "['Athletics']",
+      "participantes_top": 2018
+    },
+    "evolucao_genero": {
+      "decadas_analisadas": 5,
+      "modalidades_paris2024": 55,
+      "media_participacao_feminina": 51.65,
+      "modalidade_mais_equilibrada": "['Shooting']"
+    }
+  },
+  "arquivos_gerados": [
+    "medals_evolution_analysis.png",
+    "sports_growth_analysis.png",
+    "gender_evolution_complete.png",
+    "complete_dashboard.png"
+  ]
+}
