@@ -1,0 +1,13 @@
+📄 Para gerar PDFs:
+
+1. Notebook PDF:
+   - Abrir relatorio_olimpico_final.ipynb no Jupyter
+   - File > Download as > PDF via LaTeX
+
+2. README PDF:
+   - Abrir README.html no navegador
+   - Ctrl+P > Salvar como PDF
+
+Arquivos HTML já criados:
+- relatorio_olimpico_final.html
+- README.html

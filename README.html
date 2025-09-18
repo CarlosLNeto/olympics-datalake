@@ -1,0 +1,271 @@
+<h1
+id="data-lake-olímpico---análise-completa-dos-jogos-olímpicos"><strong>Data
+Lake Olímpico - Análise Completa dos Jogos Olímpicos</strong></h1>
+<h2 id="arquitetura-raw-bronze-gold"><strong>Arquitetura RAW → BRONZE →
+GOLD</strong></h2>
+<hr />
+<h3 id="resumo-executivo"><strong>Resumo Executivo</strong></h3>
+<p>Este projeto implementa uma <strong>arquitetura moderna de Data
+Lake</strong> para análise abrangente dos Jogos Olímpicos, integrando
+dados históricos da World Olympedia com informações oficiais de Paris
+2024. O objetivo é demonstrar boas práticas de engenharia de dados e
+gerar insights estratégicos sobre a evolução olímpica através de
+análises estatísticas rigorosas.</p>
+<h3 id="datasets-integrados"><strong>Datasets Integrados</strong></h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 24%" />
+<col style="width: 27%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Fonte</strong></th>
+<th><strong>Período</strong></th>
+<th><strong>Registros</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>World Olympedia</strong></td>
+<td>1896-2020</td>
+<td>155.861 atletas</td>
+<td>Dados históricos completos</td>
+</tr>
+<tr>
+<td><strong>Paris 2024</strong></td>
+<td>2024</td>
+<td>11.113 atletas</td>
+<td>Dados oficiais dos jogos</td>
+</tr>
+<tr>
+<td><strong>Paris 2024</strong></td>
+<td>2024</td>
+<td>2.315 medalhas</td>
+<td>Resultados completos</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>1896-2024</strong></td>
+<td><strong>169.289 registros</strong></td>
+<td><strong>128 anos de dados</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="arquitetura-do-data-lake"><strong>Arquitetura do Data
+Lake</strong></h2>
+<h3 id="camadas-implementadas"><strong>Camadas
+Implementadas</strong></h3>
+<pre><code>📁 raw/           # Dados brutos originais + metadados JSON
+📁 bronze/        # Dados processados e otimizados (Parquet)
+📁 gold/          # Análises finais e visualizações</code></pre>
+<h4 id="raw-layer---dados-brutos"><strong>RAW Layer - Dados
+Brutos</strong></h4>
+<ul>
+<li><strong>24 arquivos</strong> de dados originais em formato CSV</li>
+<li><strong>Metadados JSON</strong> descritivos para cada dataset</li>
+<li><strong>Preservação</strong> do formato original para auditoria</li>
+<li><strong>Cobertura completa</strong> de 13 datasets de Paris
+2024</li>
+</ul>
+<h4 id="bronze-layer---dados-processados"><strong>BRONZE Layer - Dados
+Processados</strong></h4>
+<ul>
+<li><strong>20 arquivos</strong> convertidos para formato Parquet
+otimizado</li>
+<li><strong>Limpeza e padronização</strong> de dados</li>
+<li><strong>Integração</strong> entre diferentes fontes</li>
+<li><strong>Metadados técnicos</strong> estruturados</li>
+</ul>
+<h4 id="gold-layer---análises-e-insights"><strong>GOLD Layer - Análises
+e Insights</strong></h4>
+<ul>
+<li><strong>13 arquivos</strong> de análises finais</li>
+<li><strong>Visualizações profissionais</strong> em alta resolução</li>
+<li><strong>Relatórios executivos</strong> em formato JSON</li>
+<li><strong>Dashboard consolidado</strong> com 6 visualizações</li>
+</ul>
+<hr />
+<h2 id="questões-analíticas-respondidas"><strong>Questões Analíticas
+Respondidas</strong></h2>
+<h3
+id="evolução-da-distribuição-de-medalhas-por-país-1986-2024"><strong>1.
+Evolução da Distribuição de Medalhas por País (1986-2024)</strong></h3>
+<p><strong>Metodologia</strong>: Análise de correlação entre dados
+históricos e Paris 2024, com estatísticas descritivas completas.</p>
+<p><strong>Principais Descobertas</strong>: - <strong>Estados
+Unidos</strong> mantêm liderança com 5.249 medalhas totais -
+<strong>Correlação forte</strong> (r=0.756) entre tradição histórica e
+performance atual - <strong>Top 5 países</strong> concentram 65% das
+medalhas analisadas - <strong>Efeito país-sede</strong> beneficiou
+significativamente a França</p>
+<h3 id="crescimento-de-modalidades-em-participação-1986-2024"><strong>2.
+Crescimento de Modalidades em Participação (1986-2024)</strong></h3>
+<p><strong>Metodologia</strong>: Análise de 55 modalidades com cálculo
+de quartis e distribuição estatística.</p>
+<p><strong>Principais Descobertas</strong>: - <strong>Atletismo
+domina</strong> com 2.018 participantes (18% do total) -
+<strong>Distribuição desigual</strong>: Top 10 modalidades concentram
+70% dos atletas - <strong>Modalidades tradicionais</strong> mantêm alta
+participação global - <strong>55 modalidades diferentes</strong>
+garantem diversidade olímpica</p>
+<h3
+id="evolução-da-proporção-por-sexo-nas-modalidades-1980-2024"><strong>3.
+Evolução da Proporção por Sexo nas Modalidades (1980-2024)</strong></h3>
+<p><strong>Metodologia</strong>: Análise temporal de 5 décadas com
+cálculo de percentuais e boxplots.</p>
+<p><strong>Principais Descobertas</strong>: - <strong>Crescimento
+significativo</strong>: Participação feminina de 25% (1980) para 46.2%
+(2020) - <strong>Progresso consistente</strong> sem retrocessos ao longo
+das décadas - <strong>35+ modalidades</strong> alcançaram paridade
+(40-60% feminino) em Paris 2024 - <strong>Tendência de
+equilíbrio</strong> crescente entre gêneros</p>
+<hr />
+<h2 id="tecnologias-e-metodologia"><strong>Tecnologias e
+Metodologia</strong></h2>
+<h3 id="stack-tecnológico"><strong>Stack Tecnológico</strong></h3>
+<ul>
+<li><strong>Python</strong>: Linguagem principal para processamento e
+análise</li>
+<li><strong>Pandas</strong>: Manipulação e transformação de dados</li>
+<li><strong>Parquet</strong>: Formato otimizado para analytics de alta
+performance</li>
+<li><strong>Matplotlib/Seaborn</strong>: Visualizações profissionais e
+estatísticas</li>
+<li><strong>JSON</strong>: Metadados estruturados com schema
+técnico</li>
+<li><strong>Jupyter</strong>: Análise interativa e relatórios
+executivos</li>
+</ul>
+<h3 id="boas-práticas-implementadas"><strong>Boas Práticas
+Implementadas</strong></h3>
+<ul>
+<li><strong>Arquitetura em camadas</strong> para separação de
+responsabilidades</li>
+<li><strong>Metadados completos</strong> para governança de dados</li>
+<li><strong>Formato Parquet</strong> para otimização de consultas</li>
+<li><strong>Versionamento Git</strong> para controle de mudanças</li>
+<li><strong>Documentação técnica</strong> abrangente</li>
+</ul>
+<hr />
+<h2 id="como-executar"><strong>Como Executar</strong></h2>
+<h3 id="pré-requisitos"><strong>Pré-requisitos</strong></h3>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code></pre></div>
+<h3 id="pipeline-completo"><strong>Pipeline Completo</strong></h3>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pipeline principal (RAW → BRONZE → GOLD)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> enhanced_pipeline.py</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Correção de gráficos (se necessário)</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> final_pipeline.py</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Análise interativa</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> notebook olympics_final_report.ipynb</span></code></pre></div>
+<h3 id="estrutura-de-execução"><strong>Estrutura de
+Execução</strong></h3>
+<ol type="1">
+<li><strong>RAW</strong>: Criação automática de metadados para dados
+brutos</li>
+<li><strong>BRONZE</strong>: Processamento e conversão para Parquet
+otimizado</li>
+<li><strong>GOLD</strong>: Geração de análises estatísticas e
+visualizações</li>
+</ol>
+<hr />
+<h2 id="arquivos-principais"><strong>Arquivos Principais</strong></h2>
+<h3 id="scripts-de-processamento"><strong>Scripts de
+Processamento</strong></h3>
+<ul>
+<li><code>enhanced_pipeline.py</code> - Pipeline principal com análises
+completas</li>
+<li><code>final_pipeline.py</code> - Correções e refinamentos
+finais</li>
+<li><code>download_paris2024.py</code> - Download automático dos dados
+Paris 2024</li>
+</ul>
+<h3 id="relatórios-e-análises"><strong>Relatórios e
+Análises</strong></h3>
+<ul>
+<li><code>olympics_final_report.ipynb</code> - <strong>Relatório
+executivo completo</strong></li>
+<li><code>relatorio_completo.json</code> - Resumo técnico das
+análises</li>
+<li><code>dashboard_corrected.png</code> - Dashboard executivo com 6
+visualizações</li>
+</ul>
+<h3 id="configuração"><strong>Configuração</strong></h3>
+<ul>
+<li><code>requirements.txt</code> - Dependências Python</li>
+<li><code>metadata_schema.json</code> - Schema técnico dos
+metadados</li>
+<li><code>README.md</code> - Documentação completa do projeto</li>
+</ul>
+<hr />
+<h2 id="resultados-e-visualizações"><strong>Resultados e
+Visualizações</strong></h2>
+<h3 id="dashboard-executivo"><strong>Dashboard Executivo</strong></h3>
+<p>Visualização consolidada com 6 gráficos integrados: - Distribuição de
+medalhas por país (pizza) - Top modalidades por participação (barras) -
+Evolução histórica por gênero (área) - Correlação histórico vs atual
+(scatter) - Distribuição de participantes (histograma) - Paridade de
+gênero (boxplot)</p>
+<h3 id="análises-específicas"><strong>Análises Específicas</strong></h3>
+<ul>
+<li><strong>Medalhas por país</strong>: Gráfico de barras +
+correlação</li>
+<li><strong>Crescimento de modalidades</strong>: Top 15 + distribuição
+estatística</li>
+<li><strong>Evolução por gênero</strong>: 4 visualizações
+integradas</li>
+</ul>
+<h3 id="estatísticas-consolidadas"><strong>Estatísticas
+Consolidadas</strong></h3>
+<ul>
+<li><strong>169.289 registros</strong> processados</li>
+<li><strong>55 modalidades</strong> analisadas</li>
+<li><strong>20 países</strong> no ranking principal</li>
+<li><strong>5 décadas</strong> de evolução histórica</li>
+</ul>
+<hr />
+<h2 id="próximos-passos"><strong>Próximos Passos</strong></h2>
+<h3 id="expansões-recomendadas"><strong>Expansões
+Recomendadas</strong></h3>
+<ul>
+<li>Incluir dados de Los Angeles 2028 quando disponíveis</li>
+<li>Adicionar métricas de performance (tempos, recordes)</li>
+<li>Implementar análises preditivas baseadas em machine learning</li>
+<li>Desenvolver dashboard interativo com Streamlit/Dash</li>
+</ul>
+<h3 id="melhorias-técnicas"><strong>Melhorias Técnicas</strong></h3>
+<ul>
+<li>Automatização do pipeline com Apache Airflow</li>
+<li>Implementação de testes unitários</li>
+<li>Integração com cloud storage (AWS S3)</li>
+<li>API REST para consulta de dados</li>
+</ul>
+<hr />
+<h2 id="contribuição-e-licença"><strong>Contribuição e
+Licença</strong></h2>
+<h3 id="demonstração-de-competências"><strong>Demonstração de
+Competências</strong></h3>
+<p>Este projeto demonstra: - <strong>Arquitetura moderna</strong> de
+Data Lake - <strong>Boas práticas</strong> de engenharia de dados -
+<strong>Análises estatísticas</strong> rigorosas - <strong>Visualizações
+profissionais</strong> de alta qualidade - <strong>Documentação
+técnica</strong> completa</p>
+<h3 id="estrutura-final"><strong>Estrutura Final</strong></h3>
+<ul>
+<li><strong>57 arquivos</strong> organizados em camadas</li>
+<li><strong>100% cobertura</strong> de metadados</li>
+<li><strong>Código versionado</strong> e documentado</li>
+<li><strong>Análises reproduzíveis</strong> e auditáveis</li>
+</ul>
+<hr />
+<p><strong>Projeto desenvolvido como demonstração de competências em
+Ciência de Dados e Engenharia de Dados</strong></p>
+<p><em>Data Lake Olímpico - Transformando dados em insights
+estratégicos</em></p>
