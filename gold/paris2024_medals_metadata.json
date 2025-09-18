@@ -1,0 +1,13 @@
+{
+  "nome": "Medalhas por País - Paris 2024",
+  "fonte": "Análise Paris 2024 Medallists",
+  "descricao": "Distribuição de medalhas por país nos Jogos de Paris 2024",
+  "campos_principais": [
+    "Gold Medal",
+    "Silver Medal",
+    "Bronze Medal",
+    "total"
+  ],
+  "data_coleta": "2025-09-17T16:51:41.010470",
+  "observacoes": "Top 15 países. Total de medalhas: 1729"
+}

@@ -1,0 +1,10 @@
+{
+  "nome": "Paris 2024 - Medals",
+  "fonte": "Kaggle - Paris 2024 Olympic Summer Games",
+  "descricao": "Medalhas conquistadas em Paris 2024",
+  "campos_principais": [
+    "Varia por arquivo"
+  ],
+  "data_coleta": "2025-09-17T16:51:39.964221",
+  "observacoes": "Dados oficiais dos Jogos Olímpicos de Paris 2024"
+}

@@ -1,0 +1,31 @@
+{
+  "nome_dataset": "Medalhas Olímpicas Integradas (1986-2024)",
+  "fonte_original": "Base dos Dados + Kaggle",
+  "descricao": "Dataset integrado de medalhas de 1986 a 2024, incluindo Paris 2024",
+  "formato": "parquet",
+  "linhas": 90,
+  "colunas": [
+    "Year",
+    "Season",
+    "City",
+    "Sport",
+    "Discipline",
+    "Event",
+    "Country",
+    "Gender",
+    "Medal"
+  ],
+  "tipos_dados": {
+    "Year": "int64",
+    "Season": "object",
+    "City": "object",
+    "Sport": "object",
+    "Discipline": "object",
+    "Event": "object",
+    "Country": "object",
+    "Gender": "object",
+    "Medal": "object"
+  },
+  "data_processamento": "2025-09-17T15:48:28.403151",
+  "observacoes": "Combinação de dados históricos e Paris 2024"
+}

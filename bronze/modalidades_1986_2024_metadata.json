@@ -1,0 +1,19 @@
+{
+  "nome_dataset": "Modalidades Olímpicas (1986-2024)",
+  "fonte_original": "Base dos Dados + Kaggle",
+  "descricao": "Lista de modalidades e eventos olímpicos de 1986 a 2024",
+  "formato": "parquet",
+  "linhas": 6,
+  "colunas": [
+    "Sport",
+    "Event",
+    "edicoes"
+  ],
+  "tipos_dados": {
+    "Sport": "object",
+    "Event": "object",
+    "edicoes": "int64"
+  },
+  "data_processamento": "2025-09-17T15:48:28.404347",
+  "observacoes": "Agregação por esporte e evento"
+}

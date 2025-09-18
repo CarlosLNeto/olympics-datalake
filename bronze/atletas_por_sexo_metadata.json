@@ -1,0 +1,19 @@
+{
+  "nome_dataset": "Distribuição de Atletas por Sexo (1986-2024)",
+  "fonte_original": "Base dos Dados + Kaggle",
+  "descricao": "Distribuição de atletas por gênero ao longo dos anos",
+  "formato": "parquet",
+  "linhas": 20,
+  "colunas": [
+    "Year",
+    "Gender",
+    "quantidade"
+  ],
+  "tipos_dados": {
+    "Year": "int64",
+    "Gender": "object",
+    "quantidade": "int64"
+  },
+  "data_processamento": "2025-09-17T15:48:28.405113",
+  "observacoes": "Agregação anual por gênero"
+}

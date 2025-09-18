@@ -1,0 +1,12 @@
+{
+  "nome": "Comparação Países - Histórico vs Paris 2024",
+  "fonte": "Integração World Olympedia + Paris 2024",
+  "descricao": "Comparação da participação de países entre dados históricos e Paris 2024",
+  "campos_principais": [
+    "country",
+    "historical_athletes",
+    "paris2024_athletes"
+  ],
+  "data_coleta": "2025-09-17T16:51:40.655223",
+  "observacoes": "Top 20 países por participação histórica"
+}

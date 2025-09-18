@@ -1,0 +1,12 @@
+{
+  "nome": "Comparação Histórica vs Paris 2024",
+  "fonte": "Integração de datasets",
+  "descricao": "Análise comparativa da participação de países entre dados históricos e Paris 2024",
+  "campos_principais": [
+    "country",
+    "historical_athletes",
+    "paris2024_athletes"
+  ],
+  "data_coleta": "2025-09-17T16:51:41.183829",
+  "observacoes": "Correlação entre participação histórica e atual"
+}

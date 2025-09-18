@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Data Lake Olympics - Metadata Schema",
+  "description": "Schema técnico para metadados dos datasets do Data Lake Olímpico",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string",
+      "description": "Nome descritivo do dataset"
+    },
+    "fonte": {
+      "type": "string",
+      "description": "Origem dos dados (URL, sistema, etc.)"
+    },
+    "descricao": {
+      "type": "string",
+      "description": "Descrição detalhada do conteúdo"
+    },
+    "campos_principais": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Lista dos campos/colunas principais"
+    },
+    "data_coleta": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data e hora da coleta/processamento (ISO 8601)"
+    },
+    "observacoes": {
+      "type": "string",
+      "description": "Observações adicionais sobre o dataset"
+    },
+    "formato": {
+      "type": "string",
+      "enum": ["CSV", "Parquet", "JSON"],
+      "description": "Formato do arquivo de dados"
+    },
+    "tamanho": {
+      "type": "object",
+      "properties": {
+        "linhas": {
+          "type": "integer",
+          "description": "Número de registros"
+        },
+        "colunas": {
+          "type": "integer",
+          "description": "Número de colunas"
+        },
+        "bytes": {
+          "type": "integer",
+          "description": "Tamanho em bytes"
+        }
+      }
+    },
+    "qualidade": {
+      "type": "object",
+      "properties": {
+        "completude": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentual de completude dos dados"
+        },
+        "valores_nulos": {
+          "type": "integer",
+          "description": "Quantidade de valores nulos"
+        },
+        "duplicatas": {
+          "type": "integer",
+          "description": "Quantidade de registros duplicados"
+        }
+      }
+    },
+    "camada": {
+      "type": "string",
+      "enum": ["raw", "bronze", "gold"],
+      "description": "Camada do Data Lake"
+    },
+    "versao": {
+      "type": "string",
+      "description": "Versão do dataset"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags para categorização"
+    }
+  },
+  "required": ["nome", "fonte", "descricao", "data_coleta", "camada"],
+  "additionalProperties": false
+}

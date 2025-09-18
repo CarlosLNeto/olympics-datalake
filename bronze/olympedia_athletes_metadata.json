@@ -1,0 +1,16 @@
+{
+  "nome": "Atletas Olímpicos Históricos (Bronze)",
+  "fonte": "World Olympedia processado",
+  "descricao": "Dataset limpo de biografias de atletas olímpicos",
+  "campos_principais": [
+    "athlete_id",
+    "name",
+    "sex",
+    "birth_year",
+    "height",
+    "weight",
+    "country"
+  ],
+  "data_coleta": "2025-09-17T16:51:40.383708",
+  "observacoes": "Processado em Parquet. Total: 155861 atletas"
+}

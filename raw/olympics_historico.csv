@@ -1,0 +1,154 @@
+Year,Season,City,Sport,Discipline,Event,Country,Gender,Medal
+1896,Summer,Athina,Athletics,Athletics,100m,USA,Men,Gold
+1896,Summer,Athina,Athletics,Athletics,100m,GRE,Men,Silver
+1896,Summer,Athina,Athletics,Athletics,100m,HUN,Men,Bronze
+1900,Summer,Paris,Athletics,Athletics,100m,USA,Men,Gold
+1900,Summer,Paris,Athletics,Athletics,100m,FRA,Men,Silver
+1900,Summer,Paris,Athletics,Athletics,100m,GBR,Men,Bronze
+1904,Summer,St. Louis,Athletics,Athletics,100m,USA,Men,Gold
+1904,Summer,St. Louis,Athletics,Athletics,100m,USA,Men,Silver
+1904,Summer,St. Louis,Athletics,Athletics,100m,USA,Men,Bronze
+1908,Summer,London,Athletics,Athletics,100m,RSA,Men,Gold
+1908,Summer,London,Athletics,Athletics,100m,USA,Men,Silver
+1908,Summer,London,Athletics,Athletics,100m,USA,Men,Bronze
+1912,Summer,Stockholm,Athletics,Athletics,100m,USA,Men,Gold
+1912,Summer,Stockholm,Athletics,Athletics,100m,USA,Men,Silver
+1912,Summer,Stockholm,Athletics,Athletics,100m,GBR,Men,Bronze
+1920,Summer,Antwerpen,Athletics,Athletics,100m,USA,Men,Gold
+1920,Summer,Antwerpen,Athletics,Athletics,100m,GBR,Men,Silver
+1920,Summer,Antwerpen,Athletics,Athletics,100m,USA,Men,Bronze
+1924,Summer,Paris,Athletics,Athletics,100m,GBR,Men,Gold
+1924,Summer,Paris,Athletics,Athletics,100m,USA,Men,Silver
+1924,Summer,Paris,Athletics,Athletics,100m,USA,Men,Bronze
+1928,Summer,Amsterdam,Athletics,Athletics,100m,USA,Men,Gold
+1928,Summer,Amsterdam,Athletics,Athletics,100m,GBR,Men,Silver
+1928,Summer,Amsterdam,Athletics,Athletics,100m,CAN,Men,Bronze
+1932,Summer,Los Angeles,Athletics,Athletics,100m,USA,Men,Gold
+1932,Summer,Los Angeles,Athletics,Athletics,100m,USA,Men,Silver
+1932,Summer,Los Angeles,Athletics,Athletics,100m,GER,Men,Bronze
+1936,Summer,Berlin,Athletics,Athletics,100m,USA,Men,Gold
+1936,Summer,Berlin,Athletics,Athletics,100m,USA,Men,Silver
+1936,Summer,Berlin,Athletics,Athletics,100m,USA,Men,Bronze
+1948,Summer,London,Athletics,Athletics,100m,USA,Men,Gold
+1948,Summer,London,Athletics,Athletics,100m,GBR,Men,Silver
+1948,Summer,London,Athletics,Athletics,100m,PAN,Men,Bronze
+1952,Summer,Helsinki,Athletics,Athletics,100m,USA,Men,Gold
+1952,Summer,Helsinki,Athletics,Athletics,100m,USA,Men,Silver
+1952,Summer,Helsinki,Athletics,Athletics,100m,USA,Men,Bronze
+1956,Summer,Melbourne,Athletics,Athletics,100m,USA,Men,Gold
+1956,Summer,Melbourne,Athletics,Athletics,100m,USA,Men,Silver
+1956,Summer,Melbourne,Athletics,Athletics,100m,USA,Men,Bronze
+1960,Summer,Roma,Athletics,Athletics,100m,GER,Men,Gold
+1960,Summer,Roma,Athletics,Athletics,100m,USA,Men,Silver
+1960,Roma,Summer,Athletics,Athletics,100m,GBR,Men,Bronze
+1964,Summer,Tokyo,Athletics,Athletics,100m,USA,Men,Gold
+1964,Summer,Tokyo,Athletics,Athletics,100m,USA,Men,Silver
+1964,Summer,Tokyo,Athletics,Athletics,100m,CAN,Men,Bronze
+1968,Summer,Mexico City,Athletics,Athletics,100m,USA,Men,Gold
+1968,Summer,Mexico City,Athletics,Athletics,100m,USA,Men,Silver
+1968,Summer,Mexico City,Athletics,Athletics,100m,USA,Men,Bronze
+1972,Summer,Munich,Athletics,Athletics,100m,URS,Men,Gold
+1972,Summer,Munich,Athletics,Athletics,100m,USA,Men,Silver
+1972,Summer,Munich,Athletics,Athletics,100m,USA,Men,Bronze
+1976,Summer,Montreal,Athletics,Athletics,100m,TTO,Men,Gold
+1976,Summer,Montreal,Athletics,Athletics,100m,JAM,Men,Silver
+1976,Summer,Montreal,Athletics,Athletics,100m,USA,Men,Bronze
+1980,Summer,Moscow,Athletics,Athletics,100m,GBR,Men,Gold
+1980,Summer,Moscow,Athletics,Athletics,100m,CUB,Men,Silver
+1980,Summer,Moscow,Athletics,Athletics,100m,URS,Men,Bronze
+1984,Summer,Los Angeles,Athletics,Athletics,100m,USA,Men,Gold
+1984,Summer,Los Angeles,Athletics,Athletics,100m,USA,Men,Silver
+1984,Summer,Los Angeles,Athletics,Athletics,100m,CAN,Men,Bronze
+1988,Summer,Seoul,Athletics,Athletics,100m,USA,Men,Gold
+1988,Summer,Seoul,Athletics,Athletics,100m,GBR,Men,Silver
+1988,Summer,Seoul,Athletics,Athletics,100m,USA,Men,Bronze
+1992,Summer,Barcelona,Athletics,Athletics,100m,GBR,Men,Gold
+1992,Summer,Barcelona,Athletics,Athletics,100m,USA,Men,Silver
+1992,Summer,Barcelona,Athletics,Athletics,100m,USA,Men,Bronze
+1996,Summer,Atlanta,Athletics,Athletics,100m,CAN,Men,Gold
+1996,Summer,Atlanta,Athletics,Athletics,100m,USA,Men,Silver
+1996,Summer,Atlanta,Athletics,Athletics,100m,TTO,Men,Bronze
+2000,Summer,Sydney,Athletics,Athletics,100m,USA,Men,Gold
+2000,Summer,Sydney,Athletics,Athletics,100m,TTO,Men,Silver
+2000,Summer,Sydney,Athletics,Athletics,100m,GBR,Men,Bronze
+2004,Summer,Athens,Athletics,Athletics,100m,USA,Men,Gold
+2004,Summer,Athens,Athletics,Athletics,100m,USA,Men,Silver
+2004,Summer,Athens,Athletics,Athletics,100m,USA,Men,Bronze
+2008,Summer,Beijing,Athletics,Athletics,100m,JAM,Men,Gold
+2008,Summer,Beijing,Athletics,Athletics,100m,TTO,Men,Silver
+2008,Summer,Beijing,Athletics,Athletics,100m,USA,Men,Bronze
+2012,Summer,London,Athletics,Athletics,100m,JAM,Men,Gold
+2012,Summer,London,Athletics,Athletics,100m,JAM,Men,Silver
+2012,Summer,London,Athletics,Athletics,100m,USA,Men,Bronze
+2016,Summer,Rio de Janeiro,Athletics,Athletics,100m,JAM,Men,Gold
+2016,Summer,Rio de Janeiro,Athletics,Athletics,100m,USA,Men,Silver
+2016,Summer,Rio de Janeiro,Athletics,Athletics,100m,CAN,Men,Bronze
+2020,Summer,Tokyo,Athletics,Athletics,100m,ITA,Men,Gold
+2020,Summer,Tokyo,Athletics,Athletics,100m,USA,Men,Silver
+2020,Summer,Tokyo,Athletics,Athletics,100m,CAN,Men,Bronze
+1928,Summer,Amsterdam,Athletics,Athletics,100m,USA,Women,Gold
+1928,Summer,Amsterdam,Athletics,Athletics,100m,CAN,Women,Silver
+1928,Summer,Amsterdam,Athletics,Athletics,100m,GER,Women,Bronze
+1932,Summer,Los Angeles,Athletics,Athletics,100m,USA,Women,Gold
+1932,Summer,Los Angeles,Athletics,Athletics,100m,POL,Women,Silver
+1932,Summer,Los Angeles,Athletics,Athletics,100m,GBR,Women,Bronze
+1936,Summer,Berlin,Athletics,Athletics,100m,USA,Women,Gold
+1936,Summer,Berlin,Athletics,Athletics,100m,POL,Women,Silver
+1936,Summer,Berlin,Athletics,Athletics,100m,GER,Women,Bronze
+1948,Summer,London,Athletics,Athletics,100m,NED,Women,Gold
+1948,Summer,London,Athletics,Athletics,100m,GBR,Women,Silver
+1948,Summer,London,Athletics,Athletics,100m,AUS,Women,Bronze
+1952,Summer,Helsinki,Athletics,Athletics,100m,USA,Women,Gold
+1952,Summer,Helsinki,Athletics,Athletics,100m,GER,Women,Silver
+1952,Summer,Helsinki,Athletics,Athletics,100m,GBR,Women,Bronze
+1956,Summer,Melbourne,Athletics,Athletics,100m,AUS,Women,Gold
+1956,Summer,Melbourne,Athletics,Athletics,100m,GBR,Women,Silver
+1956,Summer,Melbourne,Athletics,Athletics,100m,USA,Women,Bronze
+1960,Summer,Roma,Athletics,Athletics,100m,USA,Women,Gold
+1960,Summer,Roma,Athletics,Athletics,100m,GBR,Women,Silver
+1960,Summer,Roma,Athletics,Athletics,100m,POL,Women,Bronze
+1964,Summer,Tokyo,Athletics,Athletics,100m,USA,Women,Gold
+1964,Summer,Tokyo,Athletics,Athletics,100m,USA,Women,Silver
+1964,Summer,Tokyo,Athletics,Athletics,100m,POL,Women,Bronze
+1968,Summer,Mexico City,Athletics,Athletics,100m,USA,Women,Gold
+1968,Summer,Mexico City,Athletics,Athletics,100m,USA,Women,Silver
+1968,Summer,Mexico City,Athletics,Athletics,100m,URS,Women,Bronze
+1972,Summer,Munich,Athletics,Athletics,100m,GDR,Women,Gold
+1972,Summer,Munich,Athletics,Athletics,100m,AUS,Women,Silver
+1972,Summer,Munich,Athletics,Athletics,100m,GDR,Women,Bronze
+1976,Summer,Montreal,Athletics,Athletics,100m,GDR,Women,Gold
+1976,Summer,Montreal,Athletics,Athletics,100m,GDR,Women,Silver
+1976,Summer,Montreal,Athletics,Athletics,100m,GER,Women,Bronze
+1980,Summer,Moscow,Athletics,Athletics,100m,GDR,Women,Gold
+1980,Summer,Moscow,Athletics,Athletics,100m,URS,Women,Silver
+1980,Summer,Moscow,Athletics,Athletics,100m,GBR,Women,Bronze
+1984,Summer,Los Angeles,Athletics,Athletics,100m,USA,Women,Gold
+1984,Summer,Los Angeles,Athletics,Athletics,100m,USA,Women,Silver
+1984,Summer,Los Angeles,Athletics,Athletics,100m,GBR,Women,Bronze
+1988,Summer,Seoul,Athletics,Athletics,100m,USA,Women,Gold
+1988,Summer,Seoul,Athletics,Athletics,100m,GDR,Women,Silver
+1988,Summer,Seoul,Athletics,Athletics,100m,URS,Women,Bronze
+1992,Summer,Barcelona,Athletics,Athletics,100m,USA,Women,Gold
+1992,Summer,Barcelona,Athletics,Athletics,100m,JAM,Women,Silver
+1992,Summer,Barcelona,Athletics,Athletics,100m,URS,Women,Bronze
+1996,Summer,Atlanta,Athletics,Athletics,100m,USA,Women,Gold
+1996,Summer,Atlanta,Athletics,Athletics,100m,JAM,Women,Silver
+1996,Summer,Atlanta,Athletics,Athletics,100m,USA,Women,Bronze
+2000,Summer,Sydney,Athletics,Athletics,100m,USA,Women,Gold
+2000,Summer,Sydney,Athletics,Athletics,100m,GRE,Women,Silver
+2000,Summer,Sydney,Athletics,Athletics,100m,BAH,Women,Bronze
+2004,Summer,Athens,Athletics,Athletics,100m,BLR,Women,Gold
+2004,Summer,Athens,Athletics,Athletics,100m,JAM,Women,Silver
+2004,Summer,Athens,Athletics,Athletics,100m,USA,Women,Bronze
+2008,Summer,Beijing,Athletics,Athletics,100m,JAM,Women,Gold
+2008,Summer,Beijing,Athletics,Athletics,100m,JAM,Women,Silver
+2008,Summer,Beijing,Athletics,Athletics,100m,USA,Women,Bronze
+2012,Summer,London,Athletics,Athletics,100m,JAM,Women,Gold
+2012,Summer,London,Athletics,Athletics,100m,JAM,Women,Silver
+2012,Summer,London,Athletics,Athletics,100m,USA,Women,Bronze
+2016,Summer,Rio de Janeiro,Athletics,Athletics,100m,JAM,Women,Gold
+2016,Summer,Rio de Janeiro,Athletics,Athletics,100m,CIV,Women,Silver
+2016,Summer,Rio de Janeiro,Athletics,Athletics,100m,JAM,Women,Bronze
+2020,Summer,Tokyo,Athletics,Athletics,100m,JAM,Women,Gold
+2020,Summer,Tokyo,Athletics,Athletics,100m,JAM,Women,Silver
+2020,Summer,Tokyo,Athletics,Athletics,100m,BLR,Women,Bronze

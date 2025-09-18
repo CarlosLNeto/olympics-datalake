@@ -1,0 +1,18 @@
+{
+  "nome_dataset": "Jogos Olímpicos Paris 2024",
+  "fonte": "Kaggle - https://www.kaggle.com/datasets/piterfm/paris-2024-olympic-summer-games/data",
+  "descricao": "Dados completos dos Jogos Olímpicos de Paris 2024, incluindo resultados, medalhas e participantes",
+  "campos_principais": [
+    "athlete",
+    "country",
+    "sport",
+    "event",
+    "medal",
+    "gender",
+    "result"
+  ],
+  "data_coleta": "2024-09-17",
+  "observacoes": "Dados dos Jogos Olímpicos mais recentes realizados em Paris",
+  "arquivo_original": "olympics_paris2024.csv",
+  "data_processamento": "2025-09-17T15:45:23.821146"
+}

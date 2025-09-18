@@ -1,0 +1,46 @@
+{
+  "projeto": "Data Lake - Jogos Olímpicos",
+  "data_geracao": "2025-09-17T16:51:41.184722",
+  "datasets_processados": {
+    "raw": [
+      "world_olympedia_olympics_athlete_bio.csv",
+      "paris2024_*.csv"
+    ],
+    "bronze": [
+      "olympedia_athletes.parquet",
+      "paris2024_*.parquet",
+      "countries_comparison.parquet"
+    ],
+    "gold": [
+      "gender_evolution.csv",
+      "paris2024_medals.csv",
+      "historical_comparison.csv"
+    ]
+  },
+  "analises_realizadas": [
+    {
+      "nome": "Evolução por Gênero",
+      "arquivo": "gender_evolution.csv",
+      "grafico": "gender_evolution.png",
+      "insights": "Crescimento da participação feminina ao longo das décadas"
+    },
+    {
+      "nome": "Medalhas Paris 2024",
+      "arquivo": "paris2024_medals.csv",
+      "grafico": "paris2024_medals.png",
+      "insights": "Top país: USA com 330 medalhas"
+    },
+    {
+      "nome": "Comparação Histórica",
+      "arquivo": "historical_comparison.csv",
+      "grafico": "historical_comparison.png",
+      "insights": "Correlação positiva entre participação histórica e atual"
+    }
+  ],
+  "estatisticas": {
+    "total_atletas_historicos": 155861,
+    "total_atletas_paris2024": 11113,
+    "total_medalhas_paris2024": 2315,
+    "paises_analisados": 20
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "nome_dataset": "Jogos Olímpicos Históricos (1896-2022) - Bronze",
+  "fonte_original": "Base dos Dados",
+  "descricao": "Dados históricos processados em formato Parquet",
+  "formato": "parquet",
+  "linhas": 153,
+  "colunas": [
+    "Year",
+    "Season",
+    "City",
+    "Sport",
+    "Discipline",
+    "Event",
+    "Country",
+    "Gender",
+    "Medal"
+  ],
+  "tipos_dados": {
+    "Year": "int64",
+    "Season": "object",
+    "City": "object",
+    "Sport": "object",
+    "Discipline": "object",
+    "Event": "object",
+    "Country": "object",
+    "Gender": "object",
+    "Medal": "object"
+  },
+  "data_processamento": "2025-09-17T15:48:28.400905",
+  "observacoes": "Convertido de CSV para Parquet para melhor performance"
+}

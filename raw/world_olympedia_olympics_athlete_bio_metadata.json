@@ -1,0 +1,18 @@
+{
+  "nome": "World Olympedia - Biografias de Atletas",
+  "fonte": "Olympedia.org",
+  "descricao": "Dataset histórico com biografias completas de atletas olímpicos",
+  "campos_principais": [
+    "athlete_id",
+    "name",
+    "sex",
+    "birth_date",
+    "birth_year",
+    "height",
+    "weight",
+    "country",
+    "country_noc"
+  ],
+  "data_coleta": "2025-09-17T16:51:39.963937",
+  "observacoes": "Dados históricos de 1896 até jogos recentes"
+}

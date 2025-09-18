@@ -1,0 +1,14 @@
+{
+  "nome": "Eventos Paris 2024 (Bronze)",
+  "fonte": "Kaggle Paris 2024 processado",
+  "descricao": "Eventos esportivos dos Jogos de Paris 2024",
+  "campos_principais": [
+    "event",
+    "tag",
+    "sport",
+    "sport_code",
+    "sport_url"
+  ],
+  "data_coleta": "2025-09-17T16:51:40.650364",
+  "observacoes": "Total: 329 eventos"
+}

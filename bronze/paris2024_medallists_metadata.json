@@ -1,0 +1,30 @@
+{
+  "nome": "Medalhistas Paris 2024 (Bronze)",
+  "fonte": "Kaggle Paris 2024 processado",
+  "descricao": "Medalhistas dos Jogos de Paris 2024",
+  "campos_principais": [
+    "medal_date",
+    "medal_type",
+    "medal_code",
+    "name",
+    "gender",
+    "country_code",
+    "country",
+    "country_long",
+    "nationality_code",
+    "nationality",
+    "nationality_long",
+    "team",
+    "team_gender",
+    "discipline",
+    "event",
+    "event_type",
+    "url_event",
+    "birth_date",
+    "code_athlete",
+    "code_team",
+    "is_medallist"
+  ],
+  "data_coleta": "2025-09-17T16:51:40.640556",
+  "observacoes": "Total: 2315 medalhas"
+}
