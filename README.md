@@ -1,8 +1,15 @@
 # **Data Lake Olímpico - Análise Completa dos Jogos Olímpicos**
 
-## **Arquitetura RAW → BRONZE → GOLD**
+## **Equipe**
+- **Carlos Lavor Neto**
+- **Alexandro Pantoja**
+
+## **Disciplina**
+**Ciência de Dados**
 
 ---
+
+## **Arquitetura RAW → BRONZE → GOLD**
 
 ### **Executive Summary**
 
@@ -34,6 +41,11 @@ Este projeto implementa uma **arquitetura moderna de Data Lake** para análise a
 5. **📊 Distribuição de Participação** - Análise horizontal simplificada por modalidade
 6. **⚖️ Paridade de Gênero** - Distribuição estatística de equilíbrio por esporte
 
+### **Gráficos Individuais Disponíveis**
+- `gold/medalhas_por_pais.png` - Top 15 países por medalhas
+- `gold/participacao_modalidades.png` - Top 15 modalidades por participação
+- `gold/analise_genero_completa.png` - 4 visualizações de gênero integradas
+
 ---
 
 ## **Arquitetura do Data Lake**
@@ -59,9 +71,9 @@ Este projeto implementa uma **arquitetura moderna de Data Lake** para análise a
 - **Metadados técnicos** estruturados
 
 #### **GOLD Layer - Análises e Dashboard**
-- **13 arquivos** de análises finais
+- **11 arquivos** de análises finais
 - **Dashboard consolidado** em alta resolução
-- **Relatórios executivos** em formato JSON
+- **Gráficos individuais** para análise detalhada
 - **Datasets analíticos** otimizados para consulta
 
 ---
@@ -152,6 +164,11 @@ jupyter notebook relatorio_olimpico_final.ipynb
 - `gold/dashboard_consolidado.png` - **Dashboard executivo consolidado**
 - `gold/relatorio_completo.json` - Resumo técnico das análises
 
+### **Visualizações Individuais**
+- `gold/medalhas_por_pais.png` - Análise de medalhas por país
+- `gold/participacao_modalidades.png` - Participação por modalidade
+- `gold/analise_genero_completa.png` - Análise completa de gênero
+
 ### **Datasets Analíticos**
 - `gold/medals_evolution_by_country.csv` - Evolução de medalhas por país
 - `gold/sports_participation_analysis.csv` - Análise de participação por modalidade
@@ -162,7 +179,6 @@ jupyter notebook relatorio_olimpico_final.ipynb
 - `requirements.txt` - Dependências Python
 - `metadata_schema.json` - Schema técnico dos metadados
 - `README.md` - Documentação completa do projeto
-- `COMMIT_FINAL.md` - Sumário executivo da versão final
 
 ---
 
